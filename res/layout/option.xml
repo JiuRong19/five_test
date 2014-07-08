@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    >
+    <!-- 增加ImageView控件时会显示黄色的下划线，出现Missing contentDescription attribute on image的问题
+主要是因为在没有使用TextView之类的文本控件，这里添加 android:contentDescription="@string/app_name即可-->	<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:gravity="center"
+	    >
+
+		<ImageView
+		    android:id="@+id/mode"
+		    android:contentDescription="@string/app_name"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/option1" />
+
+		    <Spinner 
+		    android:id="@+id/Spinner01" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"/>
+		</TableRow>
+	    
+
+		<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:gravity="center"
+	    >
+
+			<ImageView
+			    android:id="@+id/level"
+			    android:contentDescription="@string/app_name"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/option2" />
+
+		     <Spinner 
+		    android:id="@+id/Spinner02" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"/>
+		</TableRow>
+		
+
+		
+        <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    >
+
+        <ImageView
+            android:id="@+id/first_behind"
+            android:contentDescription="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/first_behind" />
+         <Spinner 
+		    android:id="@+id/Spinner04"   
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"/>
+		</TableRow>
+		
+        
+</TableLayout>
